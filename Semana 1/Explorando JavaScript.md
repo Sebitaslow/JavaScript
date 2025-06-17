@@ -1,3 +1,5 @@
+## Parte 1: Explorando JavaScript
+
 1.1 Explica con tus palabras qué es JavaScript y en qué se diferencia de HTML y CSS.
 
 Bueno JavaScript es un Lenguaje de programacion orientado a el apartado logico pero tambien visual de una pagina web lo que permite que la pagina sea interactiva y dinámica.
@@ -11,4 +13,73 @@ Bueno JavaScript es un Lenguaje de programacion orientado a el apartado logico p
 1.3 ¿Qué significa que JavaScript sea un lenguaje "interpretado" y "basado en eventos"?
 
 Significa que el código se ejecuta linea por linea sin necesidad de ser compilado previamente a un código de máquina
+
+## Parte 2: Variables y Tipos de Datos
+
+2.1 Declara una variable nombre y asígnale tu nombre. Luego, muestra un saludo en la consola que diga "Hola, [nombre]".
+
+```
+let nombre = "Sebastian"
+console.log("Hola" + nombre);
+
+```
+
+2.2 Crea tres variables: una con un número entero, otra con un número decimal y otra con una cadena de texto. Muestra cada una en la consola usando console.log().
+
+```
+let numeroEntero = 10;
+let numeroDecimal = 1.32;
+let Texto = "Cadena de texto"
+
+console.log(numeroEntero);
+console.log(numeroDecimal);
+console.log(Texto);
+
+```
+
+2.3 Declara una constante llamada PI con el valor 3.1416. Intenta cambiar su valor y observa qué sucede.
+
+```
+const PI = 3.1416
+console.log(PI);
+
+PI = 3.34
+//Genera un error en la consola
+
+```
+
+2.4 Declara una variable sin asignarle valor. Muestra en consola qué contiene.
+
+```
+let Variable;
+console.log(Variable);
+
+```
+
+2.5 Crea una variable con valor null y otra con un valor booleano. Muestra ambos en consola.
+
+```
+let Valor = null
+let Valor2 = Boolean
+
+console.log(Valor);
+console.log(Valor2);
+
+```
+## Parte 3: Entrada y Salida de Datos
+
+3.1 Usa prompt() para pedirle al usuario su edad y guárdala en una variable. Luego, muestra en consola un mensaje que diga "Tienes [edad] años".
+
+```
+let edad = prompt("¿Cual es tu edad?")
+console.log("Tienes" + edad + "años");
+
+```
+3.2 Usa alert() para mostrar un mensaje de bienvenida.
+
+```
+alert("¡Bienvenid@ a la Pagina!")
+
+```
+
 
