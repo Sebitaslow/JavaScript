@@ -18,7 +18,7 @@ Significa que el código se ejecuta linea por linea sin necesidad de ser compila
 
 2.1 Declara una variable nombre y asígnale tu nombre. Luego, muestra un saludo en la consola que diga "Hola, [nombre]".
 
-```
+```js
 let nombre = "Sebastian"
 console.log("Hola" + nombre);
 
