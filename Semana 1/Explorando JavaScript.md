@@ -103,3 +103,13 @@ console.log(valor1 * valor2);
 console.log(valor1 / valor2);
 console.log(valor1 % valor2);
 ```
+
+4.2 Declara dos variables con cadenas de texto y únelas en una nueva variable usando el operador de concatenación.
+
+```js
+let texto1 = "Hola Mundo, ";
+let texto2 = "Hello world";
+
+let concatenar = texto1 + texto2;
+console.log(concatenar);
+```
