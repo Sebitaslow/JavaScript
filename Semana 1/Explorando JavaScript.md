@@ -113,3 +113,111 @@ let texto2 = "Hello world";
 let concatenar = texto1 + texto2;
 console.log(concatenar);
 ```
+4.3 Evalúa y muestra en consola el resultado de las siguientes comparaciones:
+
+```js
+console.log(5 == "5");
+console.log(5 === "5");
+console.log(true && false);
+console.log(false || true);
+console.log(!true);
+```
+
+## Parte 5: Condicionales
+
+5.1 Crea un programa que pida al usuario un número y muestre en consola si es mayor, menor o igual a 10.
+
+```js
+let numero = prompt("Escribe un numero: ");
+numero = Number(numero)
+
+if (numero > 10) {
+    console.log("El numero es mayor que 10");
+}
+else if (numero < 10){
+    console.log("El numero es menor que 10");
+}
+else {
+    console.log("El numero es igual a 10");
+    
+}
+
+```
+5.2 Crea un programa que solicite el nombre de un usuario y compare si se llama "Admin". Si es así, muestra un mensaje de bienvenida especial, de lo contrario, un mensaje genérico.
+
+```js
+let userc = prompt("Nombre de usuario: ")
+
+if(userc === "Admin"){
+    alert("Bienvenido Admin, tienes acceso");
+    
+}
+else{
+    alert("Bienvenido/a " + nombre);
+}
+```
+5.3 Usa el operador ternario para mostrar si un número ingresado es par o impar.
+
+```js
+let numero = prompt("Ingresa un numero: ");
+numero = Number(numero);
+
+let mensaje = (numero % 2 === 0) ? "el numro es par" : "El numero es impar";
+
+alert(mensaje);
+
+```
+## Parte 6: Consola del Navegador
+
+6.1 Muestra diferentes tipos de mensajes en la consola:
+
+```js
+console.time ("TiempoDeEjecucion");
+
+    console.info("Mensaje informativo");
+    console.warn("Mensaje de advertencia");
+    console.error("Mensje de Error");
+
+    console.group("Grupo");
+        console.log("grupo 1");
+        console.log("grupo 2");
+    console.groupEnd();
+    
+console.timeEnd ("TiempoDeEjecucion");
+
+```
+## Parte 7: Comentarios
+
+7.1 Escribe un pequeño bloque de código donde utilices comentarios de una línea y de varias líneas para explicar lo que hace cada parte.
+
+```js
+/* En este codigo encontramos varios tipos de mensajes que se muestran en 
+consola dependiendo de si es info, warn
+o muchas otras entonces esto nos ayudara a tener un control sobre ciertas cosas que queremos que haga nuestra pagina*/
+console.time ("TiempoDeEjecucion");
+
+
+    console.info("Mensaje informativo");
+    console.warn("Mensaje de advertencia");
+    console.error("Mensje de Error");
+    // console grup nos ayuda a agrupar otras consolas 
+    console.group("Grupo");
+        console.log("grupo 1");
+        console.log("grupo 2");
+    console.groupEnd();
+    
+console.timeEnd ("TiempoDeEjecucion");
+```
+
+## Parte 8: Desafío Final
+
+8.1 Crea un archivo HTML y vincúlalo con un archivo .js externo. En ese archivo:
+
+```js
+let nombre = prompt("Dame tu nombre: ");
+let edad = prompt("Dame tu edad: ");
+let ciudad = prompt("Dame tu ciudad: ");
+
+console.log("Hola" + nombre, "tienes" + edad, "años y vives en" + ciudad);
+
+```
