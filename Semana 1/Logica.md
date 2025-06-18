@@ -100,4 +100,97 @@ let frutas = ['manzana', 'banana', 'naranja'];
 let existe = frutas.includes('banana');
 ```
 
+## Ejercicios con for, for...in y for...of
 
+1. Imprimir los caracteres de una palabra
+Usa for...of para recorrer una palabra letra por letra e imprimir cada letra.
+
+```js
+const palabra = "Hola";
+
+for (const letra of palabra) {
+  console.log(letra);
+}
+```
+
+2. Contar del 1 al 5 usando for clásico
+Usa un bucle for para imprimir los números del 1 al 5.
+
+```js
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+```
+3. Mostrar la posición de cada letra en una palabra usando for...in
+Usa for...in para recorrer una palabra e imprimir el índice y el carácter en esa posición.
+
+```js
+const palabra = "Hola";
+
+for (const indice in palabra) {
+  console.log(`Índice: ${indice}, Letra: ${palabra[indice]}`);
+}
+```
+
+# Con listas (arrays)
+
+4. Recorrer una lista de nombres usando for...of
+Dado un array de nombres, imprime "Hola, [nombre]" usando for...of.
+
+```js
+const nombres = ["Ana", "Luis", "Carlos", "Sofía"];
+
+for (const nombre of nombres) {
+  console.log(`Hola, ${nombre}`);
+}
+```
+
+6. Imprimir índices de una lista usando for...in
+Usa for...in para imprimir los índices de un array de colores.
+
+```js
+const colores = ["Rojo", "Verde", "Azul", "Amarillo"];
+
+for (const indice in colores) {
+  console.log(`Índice: ${indice}`);
+}
+```
+
+8. Imprimir índice y valor de cada número en un array
+Usa for...in para obtener el índice y luego acceder al valor en la misma línea.
+
+```js
+const numeros = [10, 20, 30, 40];
+
+for (const i in numeros) {
+  console.log(`Índice: ${i}, Valor: ${numeros[i]}`);
+}
+```
+# Ejercicios de Objetos
+
+1. Crea un objeto persona con las propiedades: nombre, edad y ciudad.
+2. Muestra el valor de una propiedad específica del objeto persona.
+
+```js
+const persona = {
+    nombre: "Juan",
+    edad: 25,
+    ciudad: "Madrid",
+}
+// Se imprime la edad de la persona Tambien se puede usar corchetes como otra forma de imprimir
+console.log(persona.edad);
+```
+
+3. Modifica el valor de una propiedad existente en un objeto libro.
+
+```js
+const libro = {
+    titulo: "El principito",
+    autor: "Antoine de Saint-Exupéry",
+    año: 1943,
+}
+libro.año = 1954;
+```
+
+4. Agrega una nueva propiedad a un objeto auto.
+   
