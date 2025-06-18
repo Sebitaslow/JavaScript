@@ -194,3 +194,85 @@ libro.año = 1954;
 
 4. Agrega una nueva propiedad a un objeto auto.
    
+```js
+const auto = {
+    marca: "Toyota",
+    modelo: "Corolla",
+    año: 2024,
+}
+
+auto.color = "Rojo";
+```
+
+5. Recorre un objeto estudiante con un bucle y muestra todas sus claves y valores.
+
+```js
+const celular = {
+    marca: "Samsung",
+    modelo: "Galaxy S23",
+    precio: 1000,
+    color: "Negro",
+}
+
+for (const clave in celular) {
+    console.log((`${clave}: ${celular[clave]}`));
+}
+```
+
+## Ejercicios para practicar funciones
+
+1. Saludo personalizado
+Crea una función llamada saludar que reciba un nombre como parámetro y devuelva un saludo del tipo: "Hola, [nombre]!".
+
+```js
+function saludar(nombre) {
+  return `Hola, ${nombre}!`;
+}
+
+
+console.log(saludar("María"));  // Hola, María!
+```
+2. Suma de dos números
+Escribe una función sumar que reciba dos números como parámetros y retorne su suma.
+
+```js
+function sumar(a, b) {
+  return a + b;
+}
+console.log(sumar(5, 3));  // 8
+```
+3. Número par o impar
+Crea una función llamada esPar que reciba un número y devuelva true si es par, o false si es impar.
+
+```js
+function esPar(numero) {
+  return numero % 2 === 0;
+}
+
+console.log(esPar(4));  // true
+console.log(esPar(7));  // false
+```
+
+4. Calcular el área de un rectángulo
+Define una función areaRectangulo que reciba base y altura como argumentos y devuelva el área.
+
+```js
+function areaRectangulo(base, altura) {
+  return base * altura;
+}
+
+console.log(areaRectangulo(5, 3));  // 15
+```
+
+5. Convertir grados Celsius a Fahrenheit
+Escribe una función celsiusAFahrenheit que reciba una temperatura en grados Celsius y devuelva el valor en Fahrenheit usando la fórmula:
+F = C * 1.8 + 32
+
+```js
+function celsiusAFahrenheit(celsius) {
+  return celsius * 1.8 + 32;
+}
+
+console.log(celsiusAFahrenheit(25));  // 77
+```
+
