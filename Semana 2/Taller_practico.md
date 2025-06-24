@@ -34,3 +34,21 @@ frasesMotivadoras.forEach(frase => {
 });
 container.innerHTML += `</div>`;
 ```
+
+3. Recorre un array de números y devuelve otro array de <li> con cada número. Piensa que será una lista HTML para mostrar luego en pantalla.
+
+```js
+const numeros = [1, 2, 3, 5, 6];
+
+const listaDeLi = numeros.map(num => {
+  const li = document.createElement('li');
+  li.textContent = num;
+  return li;
+});
+
+const ul = document.getElementById('lista');
+
+listaDeLi.forEach(li => ul.appendChild(li));
+
+console.log("Lista creada correctamente");
+```
