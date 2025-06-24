@@ -16,7 +16,7 @@ const mensaje = array.map(color => `El color ${color} es muy bonito`).join('<br>
 container.innerHTML += `<p>${mensaje}</p>`;
 container.innerHTML += `</div>`;
 ```
-2. A partir de un array de frases motivadoras, crea un nuevo array donde cada frase esté envuelta en una etiqueta HTML (por ejemplo: <p>). Esto te ayudará a simular contenido que luego iría al DOM.
+2. A partir de un array de frases motivadoras, crea un nuevo array donde cada frase esté envuelta en una etiqueta HTML (por ejemplo: p ). Esto te ayudará a simular contenido que luego iría al DOM.
 
 ```js
 let frasesMotivadoras= [
