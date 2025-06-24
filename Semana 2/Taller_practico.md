@@ -1,4 +1,4 @@
-#Ejercicios preparatorios para trabajar con el DOM
+# Ejercicios preparatorios para trabajar con el DOM
 
 ## Parte 1: Arrays orientados al DOM
 
