@@ -3,7 +3,7 @@
 ## Paso 1: Define tu JSON de tarea
 Crea un archivo task.json con el siguiente contenido:
 
-```js
+```json
 {
     "id": 1,
     "title": "Estudiar Fetch API",
